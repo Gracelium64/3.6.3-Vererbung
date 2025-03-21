@@ -1,5 +1,6 @@
 import 'functions/functions_grace64.dart';
 import 'classes/tool.dart';
+import 'classes/grocery.dart';
 
 void main() {
 
@@ -30,4 +31,12 @@ print('s2:');
 
   lineBreak();
 
+  Milk m1 = Milk(name: 'milky milk', fatProzent: 3, manufacturer: 'green pastors', weight: 1.5, price: 2.5);
+  Butter b1 = Butter(name: 'buttery butter', isSalted: false, manufacturer: 'green pastors', weight: 0.5, price: 2);
+
+  print(m1);
+  m1.prozent();
+  lineBreak();
+  print(b1);
+  b1.salted();
 }
